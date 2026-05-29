@@ -1,16 +1,62 @@
-# React + Vite
+# React Todo App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+React + Vitaを使用した、シンプルで使いやすいTodoアプリケーションです。
 
-Currently, two official plugins are available:
+## 機能
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- ✅ Todoタスクの作成・編集・削除
+- ✅ タスク完了状態の切り替え
+- ✅ リアルタイム画面更新（HMR対応）
+- ✅ シンプルで直感的なUI
 
-## React Compiler
+## 技術スタック
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **React** - UIコンポーネント構築
+- **Vite** - 高速なビルドツール
+- **JavaScript/JSX** - 開発言語
+- **ESLint** - コード品質管理
 
-## Expanding the ESLint configuration
+## セットアップ
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### 前提条件
+- Node.js 16以上
+
+### インストール
+
+```bash
+# 依存パッケージをインストール
+npm install
+
+# 開発サーバーを起動
+npm run dev
+
+# 本番用ビルド
+npm run build
+
+# プレビュー
+npm run preview
+```
+
+## 開発
+
+このプロジェクトではViteの高速HMR（Hot Module Replacement）を活用しており、ファイル保存時に即座に画面に反映されます。
+
+## プロジェクト構造
+
+```
+├── src/
+│   ├── App.jsx
+│   ├── main.jsx
+│   └── ...
+├── index.html
+├── vite.config.js
+└── package.json
+```
+
+## ライセンス
+
+MITライセンス
+
+## 貢献
+
+バグ報告や機能リクエストはIssuesでお願いします。
